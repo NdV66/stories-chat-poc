@@ -15,12 +15,12 @@ export const AddStory = ({ paths, service }: Props) => {
   return (
     <>
       {isLoading && (
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }} data-testid="loader">
           <CircularProgress />
         </Box>
       )}
       <StyledBox>
-        <StyledFormWrapper onSubmit={formik.handleSubmit} autoComplete="off">
+        <StyledFormWrapper onSubmit={formik.handleSubmit} autoComplete="off" name="addStory" role="form">
           <StyledTextField
             name="childName"
             label={translations.addStory.childName}
@@ -63,7 +63,7 @@ export const AddStory = ({ paths, service }: Props) => {
           />
 
           <StyledButtonWrapper>
-            <StyledButton type="submit" disabled={isLoading}>
+            <StyledButton type="submit" disabled={isLoading} role="button">
               {translations.addStory.submit}
             </StyledButton>
           </StyledButtonWrapper>

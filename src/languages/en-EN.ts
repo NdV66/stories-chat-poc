@@ -20,7 +20,7 @@ export const enENTranslate: TTranslate = {
   },
 
   addStory: {
-    title: 'Unsleash your imaginations!',
+    title: 'Unleash your imaginations!',
     childName: 'Child name',
     childAge: 'Child age',
     topic: 'Topic',

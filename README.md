@@ -8,6 +8,9 @@ Important: Create your `.env` file (based on `.env.example` file) with your API 
 ## Available Scripts
 In the project directory, you can run:
 
+### `npm e2e`
+Runs Cypress e2e tests. Always run the app before the e2e tests, using `start` script.
+
 ### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
